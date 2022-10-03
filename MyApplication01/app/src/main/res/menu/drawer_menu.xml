@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/frag_1"
+        android:title="Profile"
+        android:icon="@drawable/profile_icon"/>
+    <item
+        android:id="@+id/frag_2"
+        android:title="Contacts"
+        android:icon="@drawable/contact_icon"/>
+    <item
+        android:id="@+id/frag_3"
+        android:title="Login"
+        android:icon="@drawable/login_icon"/>
+    <item
+        android:id="@+id/frag_4"
+        android:title="Update"
+        android:icon="@drawable/update_icon"/>
+</menu>
