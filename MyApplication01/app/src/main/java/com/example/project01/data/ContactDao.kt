@@ -24,6 +24,9 @@ interface ContactDao {
     @Query("SELECT * FROM contact_table ORDER BY id LIMIT 1")
     fun loadLastContact(): LiveData<Contact?>?
 
+    @Query("SELECT * FROM contact_table")
+    fun selectAllContacts(): List<Contact>
+
 
 
 }

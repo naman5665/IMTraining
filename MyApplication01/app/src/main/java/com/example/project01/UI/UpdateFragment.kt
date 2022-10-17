@@ -1,5 +1,6 @@
 package com.example.project01.UI
 
+import android.graphics.Bitmap
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,7 @@ import com.example.project01.BaseFragment.BaseFragment
 import com.example.project01.R
 import com.example.project01.data.Contact
 import com.example.project01.data.ContactDatabase
+import kotlinx.android.synthetic.main.profile_fragment.*
 import kotlinx.android.synthetic.main.profile_fragment.view.*
 import kotlinx.android.synthetic.main.update_fragment.*
 import kotlinx.android.synthetic.main.update_fragment.view.*
@@ -17,9 +19,6 @@ import kotlinx.coroutines.launch
 
 
 class UpdateFragment : BaseFragment() {
-
-    lateinit var getContact: ContactDatabase
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,6 +34,9 @@ class UpdateFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val bitmap = arguments?.getParcelable<Bitmap>("bitmap")
+        image_updateImage.setImageBitmap(bitmap)
 
         launch{
             context?.let {

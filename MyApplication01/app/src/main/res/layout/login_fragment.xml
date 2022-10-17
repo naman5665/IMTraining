@@ -98,14 +98,14 @@
 
     <ImageView
         android:id="@+id/image_editImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="96dp"
+        android:layout_height="106dp"
         android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/phone_text_input_layout"
-        tools:src="@tools:sample/avatars" />
+        app:srcCompat="@mipmap/ic_launcher_1" />
 
     <Button
         android:id="@+id/login_btn"
